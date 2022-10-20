@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //se pregunta la edad para proceder con las demás preguntas
+
+        var edad = parseInt(prompt("ingresa tu edad", 0));
+
+        // se realiza la validacion de edad , si este es mayor, le dejará entrar, si es menor de edad, lo echará 
+
+
+
+        if (Number.isInteger(edad)) {
+
+
+            if (edad >= 18) {
+
+                //se establece las demás variables
+
+                var nombre = prompt("Ingresa tu nombre");
+                var apellido = prompt(nombre + " Ingresa tu Apellido");
+                var direccion = prompt(nombre + " ingresa tu dirección");
+                var correo = prompt(nombre + " ingresa tu correo");
+
+                //se abre el menú
+
+                document.write("Bienvenido " + nombre, apellido);
+                document.write("<br>")
+                document.write("*****************************");
+                   document.write("<br>")
+                document.write("tu dirección es " + direccion + ", tu edad es " + edad + ", y tu correo es " + correo);
+                   document.write("<br>")
+                document.write("*****************************");
+
+            } else {
+
+                console.log(" Lo siento no puedes registrate, eres menor de edad");
+                console.log("No puedes ingresar al sistema");
+            }
+
+
+
+        } else {
+            alert(" caracter invalido ")
+        }
+    </script>
+</body>

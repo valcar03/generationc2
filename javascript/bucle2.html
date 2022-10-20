@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+/* algo que se repite mientras se repita la condición
+        while(condición){
+
+        }*/
+        var contador = 0; //definiendo variable
+        while(contador <= 5){ //validando, mientras sea verdadero entra al while
+            console.log("somos geniales")
+            contador++;
+            //for es bueno para cuando quiero un número definido de veces
+            //para el while, es indefeinido
+        }
+        var termino = true; //variable booleana
+        var contador = 10;
+//termino, cuando el contador == 200
+        while (termino){
+            contador= contador + 10;
+            console.log("contador", contador)
+            if(contador==200){
+                termino = false;
+            }
+        }
+
+
+    </script>
+</body>
+</html>
